@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(179, 208, 251, 0.908) ;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header{
+    height: 8rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 2rem;   
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    gap:8rem;
+    list-style: none;
+}
+
+.a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color:white;
+    padding: 0 10px;
+    border-radius: 20%;
+}
+
+.a:hover{
+    color:black
+}
+
+
