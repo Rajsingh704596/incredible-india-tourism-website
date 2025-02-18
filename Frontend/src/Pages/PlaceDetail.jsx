@@ -27,21 +27,27 @@ function PlaceDetail() {
   }
 
   return (
-    <div>
-      <div>
-        {Object.entries(indData).map(([key, value]) => (
-          <div key={key}>
-            {key === "image" ? (
-              <img src={value} alt={key} />
-            ) : (
-              <>
-                <strong>{key}:</strong> {value}
-              </>
-            )}
-          </div>
-        ))}
+    <div className="place-detail">
+      <h1 className="page-title">Place Details</h1>
+      <div className="detail-container">
+        {Object.entries(indData)
+          .filter(([key]) => key !== "id") // Filter out the 'id' key
+          .map(([key, value]) => (
+            <div key={key} className="detail-item">
+              {key === "image" ? (
+                <img src={value} alt={key} className="detail-image" />
+              ) : (
+                <>
+                  <strong className="detail-key">{key}:</strong>{" "}
+                  <span className="detail-value">{value}</span>
+                </>
+              )}
+            </div>
+          ))}
       </div>
-      <button onClick={() => navigate(-1)}>Back to Previous Page</button>
+      <button className="back-button" onClick={() => navigate(-1)}>
+        Back to Previous Page
+      </button>
     </div>
   );
 }

@@ -1,29 +1,36 @@
-
-
 const Home = () => {
   return (
     <div className="home-page">
-      <header className="hero-section">
-        <h1 className="hero-title">Explore the Wonders of India</h1>
-        <p className="hero-subtitle">
-          Discover the rich culture, breathtaking landscapes, and vibrant history
-          that make India a must-visit destination.
-        </p>
-      </header>
-
-      <section className="about-india">
-        <h2 className="section-title">About India</h2>
-        <p>
-          India, known for its diversity, is a land of ancient cultures, stunning
-          architecture, lush landscapes, and incredible cuisine. From the snowy peaks
-          of the Himalayas to the sun-kissed beaches of Goa, India offers something
-          for every traveler.
-        </p>
-      </section>
+      <div className="grid-container">
+        <div className="heading-section">
+          <h1 className="main-heading">Explore the Wonders of India</h1>
+        </div>
+        <div className="details-section">
+          <div className="detail-item">
+            <h2>Rich Culture</h2>
+            <p>
+              India is known for its diverse cultures, traditions, and festivals.
+              From Diwali to Holi, every festival is celebrated with great enthusiasm.
+            </p>
+          </div>
+          <div className="detail-item">
+            <h2>Breathtaking Landscapes</h2>
+            <p>
+              From the Himalayas in the north to the beaches of Goa in the south,
+              India offers a variety of stunning landscapes.
+            </p>
+          </div>
+          <div className="detail-item">
+            <h2>Vibrant History</h2>
+            <p>
+              India&apos;s history is rich and vibrant, with ancient monuments like the
+              Taj Mahal and Qutub Minar standing as testaments to its glorious past.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-
   );
 };
 
 export default Home;
-
